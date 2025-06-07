@@ -97,11 +97,21 @@
     </dependencies>
 
     <build>
+        <!-- 1) Desativa filtering de resources -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
         <plugins>
+            <!-- seu plugin Spring Boot (mantido) -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!-- seu compiler plugin (mantido) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -114,5 +124,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
