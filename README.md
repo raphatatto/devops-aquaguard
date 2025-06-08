@@ -1,4 +1,4 @@
-# Aquaguard DevOps
+# AquaGuard DevOps
 
 ## Integrantes
 - **Raphaela Oliveira Tatto** (RM 554983)
