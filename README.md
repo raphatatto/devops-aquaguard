@@ -65,6 +65,8 @@ docker build -t aquaguard-api:1.0 -f api/Dockerfile .
 ```bash
 docker run -d --name aquaguard-api --network aquaguard-net -p 8080:8080   -e SPRING_DATASOURCE_URL=jdbc:postgresql://aquaguard-db:5432/aquaguarddb   -e SPRING_DATASOURCE_USERNAME=aquaguarduser   -e SPRING_DATASOURCE_PASSWORD=supersecret   -e SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver   -e SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect   aquaguard-api:1.0
 ```
+## Link do video
+https://www.youtube.com/watch?v=30ipTXjG1do
 
 ## Testes e Evidências
 - Acesse o Swagger UI em: `http://localhost:8080/swagger-ui.html`
@@ -73,10 +75,15 @@ docker run -d --name aquaguard-api --network aquaguard-net -p 8080:8080   -e SPR
 ```bash
 docker exec -it aquaguard-db psql -U aquaguarduser -d aquaguarddb -c "SELECT * FROM tb_aqua_usuario;"
 ```
-- API de Java log
+## API de Java log
 ![Log API de java](https://github.com/raphatatto/devops-aquaguard/blob/main/img/log-api.png)
+Na sequência acima, observamos:
+- Evidências do CRUD completo
+- Comandos `insert`, `select`, `update` e `delete`
 
-- Banco de dados Log
+
+## Banco de dados Log
 ![Log do banco](https://github.com/raphatatto/devops-aquaguard/blob/main/img/logs-db.png)
+
 
 *Evidências apresentadas no vídeo: execução dos containers, logs, CRUD e consulta no banco.* 
