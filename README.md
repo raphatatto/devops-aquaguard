@@ -73,5 +73,10 @@ docker run -d --name aquaguard-api --network aquaguard-net -p 8080:8080   -e SPR
 ```bash
 docker exec -it aquaguard-db psql -U aquaguarduser -d aquaguarddb -c "SELECT * FROM tb_aqua_usuario;"
 ```
+- API de Java log
+![Log API de java](https://github.com/raphatatto/devops-aquaguard/blob/main/img/log-api.png)
+
+- Banco de dados Log
+![Log do banco](https://github.com/raphatatto/devops-aquaguard/blob/main/img/logs-db.png)
 
 *Evidências apresentadas no vídeo: execução dos containers, logs, CRUD e consulta no banco.* 
