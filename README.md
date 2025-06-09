@@ -68,6 +68,9 @@ docker run -d --name aquaguard-api --network aquaguard-net -p 8080:8080   -e SPR
 ## Link do video
 https://www.youtube.com/watch?v=30ipTXjG1do
 
+## Link do Pitch
+https://youtu.be/7PS6rra8hOE
+
 ## Testes e Evidências
 - Acesse o Swagger UI em: `http://localhost:8080/swagger-ui.html`
 - Realize operações de CRUD via Swagger ou curl.
